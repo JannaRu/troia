@@ -1,25 +1,45 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <link href="styles/style.css" rel="stylesheet" type="text/css">
-<link href="https://fonts.googleapis.com/css?family=Rajdhani" rel="stylesheet">
-    <meta charset="utf-8">
-    <title>Сайт петухов</title>
-  </head>
-  <body>
-	<h1>Страница про петухов</h1>
-	<h2>И всяких гребней</h2>
-	<h3>И пернатых</h3>
-<a href = "https://ru.wikipedia.org/wiki/%D0%9F%D0%B5%D1%82%D1%83%D1%85"> кто такие питуки </a>
-    <img src="images/petuh.jpg" width="400" height="280" alt="Это ты!">
-	<p >Это абзац! тут должна быть написана всякая хуйня</p>
-<ol>
-<li class= "tvet-1-3"> первэй </li>
-<li id="srift-2-4"> втарой </li>
-<li class= "tvet-1-3"> третей </li>
-<li id="srift-2-4"> четверты </li>
-</ol>
-<button>сменить петуха</button>
-<script src="scripts/main.js"></script>
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <script
+        src="http://code.jquery.com/jquery-2.2.4.js"
+        integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+        crossorigin="anonymous"></script>
+    <script src="scrtipt/script.js"></script>
+    <title>Contestatie</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1> Completaţi compartemenetele indicate</h1>
+            <p>Indicaţi informaţia aşa cum este indicat în procesul-verbal</p>
+        </header>
+
+            <button onclick="makeRequest()" id="click-me">Click me</button>
+            <input type="number" value="" id="page-number">
+            <div id="result"></div>
+
+        <section>
+            <div class="input">
+               
+                     
+                <input type="text" class="input__name" value="Numele, prenumele, patronimic"><br>
+                
+                <input type="date" class="input__date" value="" min="2019-01-01"><br>
+                <input type="time" class="input__time"><br>
+                <input type="email" class="input__email"><br>
+                <input type="radio" class="input__radio"><br>
+                <input type="file" class="input__radio"><br>
+                <input type="submit" class="input__submit">
+
+
+            </div>
+        </section>
+    </div>
+    
+</body>
 </html>
