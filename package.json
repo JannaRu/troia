@@ -1,0 +1,17 @@
+{
+  "name": "dimo1",
+  "version": "1.0.0",
+  "description": "dimo1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "dimo1"
+  ],
+  "author": "alex",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.11.0"
+  }
+}
