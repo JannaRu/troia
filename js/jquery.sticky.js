@@ -10,6 +10,7 @@
 //              It will only set the 'top' and 'position' of your element, you
 //              might need to adjust the width in some cases.
 
+
 (function (factory) {
     if (typeof define === 'function' && define.amd) {
         // AMD. Register as an anonymous module.
@@ -272,3 +273,30 @@
     setTimeout(scroller, 0);
   });
 }));
+
+
+$(window).on('load', function () { 
+	setTimeout(function(){
+		if($('.overlay').hasClass('disabled')) {
+			return false;
+		} else {
+			$(".overlay").fadeIn();
+		}
+	},500);
+});
+
+$('.close-popup').click(function() { 
+	$('.overlay').fadeOut();
+	
+});
+
+// закрыть по клику вне окна
+$(document).mouseup(function (e) { 
+	var popup = $('.popup');
+	if (e.target!=popup[0]&&popup.has(e.target).length === 0){
+		$('.overlay').fadeOut();
+		
+	}
+});
+
+

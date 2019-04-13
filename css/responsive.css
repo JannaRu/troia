@@ -14,6 +14,13 @@
 	  text-transform: uppercase;
 	  line-height:auto !important;
 	}
+
+	.popup {
+		height: auto;
+		position: relative;
+		width:100% !important;
+		margin-right: 0;
+	}
 }
 /* Mobile Layout: 320px. */
 @media only screen and (max-width: 767px) { 
@@ -22,6 +29,20 @@
 	}
 	.carousel-caption {
 	  top: 5px;
+	}
+
+	.navbar {
+		visibility: hidden;
+	}
+
+	 .popup {
+		height: auto;
+		position: relative;
+		width:100% !important;
+		margin-right: 0;
+		padding: 0;
+		font-size:5px;
+		top: 0;
 	}
 	
 	.carousel-caption h1 {

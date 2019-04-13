@@ -14,7 +14,100 @@ html {
     color: #222;
     font-size: 1em;
     line-height: 1.4;
+} 
+body {
+    width: 100%;
+	height: 100vh;
+	transition: all .2s ease;
 }
+.overlay {
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+    left: 0;
+    z-index: 1050;
+	background-color: rgba(0, 0, 0, .8);
+	display: none;
+}
+
+.popup {
+    position: absolute;
+    font-size: 7px;
+    width:120rem;
+    height: 91%;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    padding: 4rem;
+    box-sizing: border-box;
+    background-color: #ff5252;
+    color:#ffff;
+    z-index: 1052;
+}
+
+.close-popup {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	width: 23px;
+	height: 23px;
+	cursor: pointer;
+}
+
+
+/*
+ .overlay {
+     position: relative;
+     width: 100%;
+     height: 100vh;
+     top:0;
+     left:0;
+     display:none;
+ }
+
+ .popup {
+     position: absolute;
+     font-size: 7px;
+     width:120rem;
+     height: 91%;
+     left:50%;
+     top:50%;
+     transform: translate(-50%, -50%);
+     padding: 4rem;
+     box-sizing: border-box;
+     background-color: #ff5252;
+     color:#ffff;
+ }
+ .close-popup {
+     position:absolute;
+     top:1.5rem;
+     right: 1.5rem;
+     width: 2.3rem;
+     height: 2.3rem;
+     cursor:pointer;
+ }
+ */
+ .close-popup:before {
+    content: '';
+    background-color: #ffff;
+    position: absolute;
+    height: 1px;
+    width: 3rem;
+    top:1rem;
+    left:-4px;
+    transform: rotate(-45deg);
+ }
+ .close-popup:after{
+     content: '';
+     background-color: #fff;
+     position: absolute;
+     height: 1px;
+     width: 3rem;
+     top:1rem;
+     transform: rotate(45deg);
+     left: -4px;
+ }
 
 /*
  * Remove text-shadow in selection highlight:
