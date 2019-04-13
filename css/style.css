@@ -91,6 +91,10 @@ ul.navbar-nav li a{
 .is-sticky .main-menu ul.navbar-nav li a{
 	color:#9b9b9b !important;
 }
+.main-menu ul.navbar-nav li a {
+	line-height: 40px;
+	padding: 10px 12px;
+}
 
 /*Top Navbar*/
 

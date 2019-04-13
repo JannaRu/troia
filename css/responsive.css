@@ -16,7 +16,7 @@
 	}
 
 	.popup {
-		height: auto;
+		height: 100%;
 		position: relative;
 		width:100% !important;
 		margin-right: 0;
@@ -24,6 +24,7 @@
 }
 /* Mobile Layout: 320px. */
 @media only screen and (max-width: 767px) { 
+
 	.featured-list #grid .thumb {
 	  width: 50%;
 	}
@@ -36,13 +37,13 @@
 	}
 
 	 .popup {
-		height: auto;
+		height: 85%;
 		position: relative;
-		width:100% !important;
+		width: 90% !important;
 		margin-right: 0;
 		padding: 0;
 		font-size:5px;
-		top: 0;
+		overflow-y: scroll;
 	}
 	
 	.carousel-caption h1 {
